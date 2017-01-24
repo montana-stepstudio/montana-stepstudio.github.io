@@ -125,6 +125,19 @@
 
 		}
 	}
+	.contact{
+		.half__sml,
+		.half__lrg{
+			width: 100%;
+			float: none;
+		}
+		.half__sml{
+			margin-top: 300px;
+		}
+		.map{
+			height: 300px;
+		}
+	}
 }
 
 @media(max-width: 679px){
