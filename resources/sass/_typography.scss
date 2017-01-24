@@ -1,0 +1,76 @@
+// # typography.sass
+
+body {
+  font-size: $baseFontSize;
+  font-family: $baseFontFamily;
+  line-height: 1.4rem;  
+}
+.subText{
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+a{
+  text-decoration: none;
+  // &:link{
+  //   color: $text;
+  // }
+  // &:visited{
+  //   color: darken($text, 10);
+  // }
+  // &:hover{
+  //   color: darken($text, 10);;
+  //   cursor: pointer;
+  // }
+  // &:active{
+  //   color: $text;
+  // }
+}
+
+a,
+a:active,
+a:focus,
+a:link,
+a:visited{
+  outline: 0px none !important;
+  // border: 0px none !important;
+}
+
+// a,p,b{
+//   font-family: $defaultFontFamily; 
+// }
+p, li{
+  color: $text--drk;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+}
+b{
+  font-weight: $fontBold;
+}
+h1,h2,h3,h4,h5,h6 {
+}
+h1{
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 66px;
+}
+h2{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 59px;
+}
+h3{
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+h4{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h5{
+  font-size: 12px;
+}
+strong {
+}

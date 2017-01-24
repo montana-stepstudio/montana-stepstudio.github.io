@@ -1,0 +1,40 @@
+//*****************
+// 		FONTS
+//*****************
+
+$baseFontSize: 16px;
+
+$baseFontFamily:  'Muli', sans-serif;
+
+$fontThin    	: 100;
+$fontLight      : 200;
+$fontNormal     : 400;
+$fontBold    	: 500;
+$fontExtraBold  : 900;
+
+//*******************
+// 	PROJECT COLORS
+//*******************
+
+$white  : rgba(255,255,255,0.9);
+$black  : #0b0b0b;
+$grey   : #797e83;
+$copper	: #DEC7BD;
+
+$colorPrimary	: #4A4A4A;
+$colorSecondary	: $grey;
+$colorThird		: $grey;
+$colorFourth	: $grey;
+$colorFifth		: $grey;
+$text--drk 		: $colorPrimary;
+$text--lght		: $white;
+
+
+//*****************
+// 		IMAGES
+//*****************
+
+$pathRel	: "../images";
+
+$sprites: sprite-map("/img/sprites/icons/*.png");            // import 1x sprites
+$sprites2x: sprite-map("/img/sprites-retina/icons/*.png");   // import 2x sprites

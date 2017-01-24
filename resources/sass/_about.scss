@@ -1,0 +1,12 @@
+.about{
+	@extend %clearfix;
+	padding: 40px 0;
+	h2{
+		width: 60%;
+		padding-right: 10%;
+	}
+	.intro_p{
+		margin-top: 2rem;
+		width: 40%;
+	}
+}

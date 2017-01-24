@@ -1,0 +1,27 @@
+.contact{
+	position: relative;
+	h4{
+		margin-bottom: 0px;
+	}
+	.instagram{
+		@include sprite($instagram_black);
+		display: block;
+	}
+	.facebook{
+		@include sprite($facebook);
+		display: block;
+	}
+}
+.map{
+	position: absolute;
+	// background: red;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+.social{
+	li{
+		display: inline-block;
+		margin-right: 10px;
+	}
+}

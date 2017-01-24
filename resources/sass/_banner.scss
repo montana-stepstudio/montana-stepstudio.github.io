@@ -1,0 +1,81 @@
+.banner{
+	@extend %clearfix;
+	padding-bottom: 100px;
+	&__cards,
+	&__strapline{
+		width: 50%;
+	}
+	&__cards{
+		@extend %clearfix;
+		float: left;
+		height: 450px;
+		&__item{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			float: left;
+			width: 47%;
+			height: 100%;
+			text-align: center;
+			position: relative;
+			@include google_shadow(3);
+			transition: all .3s ease;
+			z-index: 10;
+			&:hover{
+				@include google_shadow(5);
+				transform: translateY(-8px);
+			}
+			&:first-child{
+				margin-right: 6%;
+			}
+			a{
+				color: white;
+				display: block;
+				position: relative;
+				z-index: 12;
+				@include google_text_shadow(5);
+			}
+			&:after{
+				z-index: 11;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: '';
+				background: rgba($copper, .8);
+			}
+			&.studio,
+			&.desk{
+				background-size: cover;
+			}
+			&.studio{
+				background-image: url('../../img/content/studio.png');
+			}
+			&.desk{
+				background-image: url('../../img/content/desks.png');
+			}
+			h3{
+				display: inline-block;
+				border-bottom: 1px solid white;
+				margin-bottom: 0px;
+			}
+			h5{
+				margin-top: 5px;	
+			}
+			h4{
+				border-bottom: 0px;
+				margin-top: 0;
+				font-size: 0.6rem;
+			}
+		}
+	}
+	&__strapline{
+		float: right;
+		padding-left: 30px;
+		span{
+			padding-bottom: 3px;
+			border-bottom: 5px solid $text--drk;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+nav{
+	@extend %clearfix;
+	&.right{
+		clear: right;
+	}
+}
+.header{
+	&__logo{
+		@include sprite($logo);
+		margin-top: 40px;
+	}
+	&__nav{
+		@extend %clearfix;
+		clear: both;
+		li{
+			float: left;
+			margin-right: 20px;
+		}
+		.toggleMenu{
+			position: relative;
+			margin-top: 33px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		&.primary{
+			display: inline-block;
+			margin-top: 0px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		&.contacts{
+			margin-bottom: 15px;
+		}
+	}
+}
+.toggleMenu{
+	display: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+div.toggleMenu{
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	padding-bottom: 1px;
+	border-bottom: 2px solid $colorPrimary;
+	transition: all .2s ease;
+	z-index: 9999;
+	&:hover{
+		padding-bottom: 5px;
+	}
+}

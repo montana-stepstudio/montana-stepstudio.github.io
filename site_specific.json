@@ -1,0 +1,20 @@
+{
+    "cssDependencies": [
+
+    ],
+    "jsDependencies": [
+
+    ],
+    "packages": {
+        "node_modules":{
+        },
+        "bower_components":{
+            "jquery": "./bower_components/jquery/**/*",
+            "jquery-ui": "./bower_components/jquery-ui/**/*"
+        },
+        "resources":{
+            "modernizr": "./resources/vendor/modernizr/**/*",
+            "adaptive-images": "./resources/vendor/adaptive-images.1.5.2/**/*"
+        }
+    }
+}

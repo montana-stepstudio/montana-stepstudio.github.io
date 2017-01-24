@@ -1,0 +1,18 @@
+footer{
+	background: $colorPrimary;
+	padding: 30px 0;
+	.logo{
+		@include sprite($logofooter);
+		margin-top: 20px;
+	}
+	p{
+		margin-top: 15px;
+		color: white;
+	}
+	.instagram{
+		@include sprite($instagram);
+		margin-top: 10px;
+		margin-left: 20px;
+		display: block;
+	}
+}

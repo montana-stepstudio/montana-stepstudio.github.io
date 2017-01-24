@@ -1,0 +1,310 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$facebook-name: 'facebook';
+$facebook-x: 150px;
+$facebook-y: 87px;
+$facebook-offset-x: -150px;
+$facebook-offset-y: -87px;
+$facebook-width: 27px;
+$facebook-height: 27px;
+$facebook-total-width: 398px;
+$facebook-total-height: 150px;
+$facebook-image: '../../img/sprite.png';
+$facebook: (150px, 87px, -150px, -87px, 27px, 27px, 398px, 150px, '../../img/sprite.png', 'facebook', );
+$instagram-name: 'instagram';
+$instagram-x: 177px;
+$instagram-y: 87px;
+$instagram-offset-x: -177px;
+$instagram-offset-y: -87px;
+$instagram-width: 27px;
+$instagram-height: 27px;
+$instagram-total-width: 398px;
+$instagram-total-height: 150px;
+$instagram-image: '../../img/sprite.png';
+$instagram: (177px, 87px, -177px, -87px, 27px, 27px, 398px, 150px, '../../img/sprite.png', 'instagram', );
+$instagram-black-name: 'instagramBlack';
+$instagram-black-x: 204px;
+$instagram-black-y: 87px;
+$instagram-black-offset-x: -204px;
+$instagram-black-offset-y: -87px;
+$instagram-black-width: 27px;
+$instagram-black-height: 27px;
+$instagram-black-total-width: 398px;
+$instagram-black-total-height: 150px;
+$instagram-black-image: '../../img/sprite.png';
+$instagram-black: (204px, 87px, -204px, -87px, 27px, 27px, 398px, 150px, '../../img/sprite.png', 'instagramBlack', );
+$logo-name: 'logo';
+$logo-x: 150px;
+$logo-y: 0px;
+$logo-offset-x: -150px;
+$logo-offset-y: 0px;
+$logo-width: 248px;
+$logo-height: 39px;
+$logo-total-width: 398px;
+$logo-total-height: 150px;
+$logo-image: '../../img/sprite.png';
+$logo: (150px, 0px, -150px, 0px, 248px, 39px, 398px, 150px, '../../img/sprite.png', 'logo', );
+$logo-badge-name: 'logoBadge';
+$logo-badge-x: 0px;
+$logo-badge-y: 0px;
+$logo-badge-offset-x: 0px;
+$logo-badge-offset-y: 0px;
+$logo-badge-width: 150px;
+$logo-badge-height: 150px;
+$logo-badge-total-width: 398px;
+$logo-badge-total-height: 150px;
+$logo-badge-image: '../../img/sprite.png';
+$logo-badge: (0px, 0px, 0px, 0px, 150px, 150px, 398px, 150px, '../../img/sprite.png', 'logoBadge', );
+$logo-mobile-name: 'logoMobile';
+$logo-mobile-x: 150px;
+$logo-mobile-y: 39px;
+$logo-mobile-offset-x: -150px;
+$logo-mobile-offset-y: -39px;
+$logo-mobile-width: 150px;
+$logo-mobile-height: 24px;
+$logo-mobile-total-width: 398px;
+$logo-mobile-total-height: 150px;
+$logo-mobile-image: '../../img/sprite.png';
+$logo-mobile: (150px, 39px, -150px, -39px, 150px, 24px, 398px, 150px, '../../img/sprite.png', 'logoMobile', );
+$logofooter-name: 'logofooter';
+$logofooter-x: 150px;
+$logofooter-y: 63px;
+$logofooter-offset-x: -150px;
+$logofooter-offset-y: -63px;
+$logofooter-width: 150px;
+$logofooter-height: 24px;
+$logofooter-total-width: 398px;
+$logofooter-total-height: 150px;
+$logofooter-image: '../../img/sprite.png';
+$logofooter: (150px, 63px, -150px, -63px, 150px, 24px, 398px, 150px, '../../img/sprite.png', 'logofooter', );
+$facebook-2x-name: 'facebook@2x';
+$facebook-2x-x: 300px;
+$facebook-2x-y: 174px;
+$facebook-2x-offset-x: -300px;
+$facebook-2x-offset-y: -174px;
+$facebook-2x-width: 54px;
+$facebook-2x-height: 54px;
+$facebook-2x-total-width: 796px;
+$facebook-2x-total-height: 300px;
+$facebook-2x-image: '../../img/sprite@2x.png';
+$facebook-2x: (300px, 174px, -300px, -174px, 54px, 54px, 796px, 300px, '../../img/sprite@2x.png', 'facebook@2x', );
+$instagram-2x-name: 'instagram@2x';
+$instagram-2x-x: 354px;
+$instagram-2x-y: 174px;
+$instagram-2x-offset-x: -354px;
+$instagram-2x-offset-y: -174px;
+$instagram-2x-width: 54px;
+$instagram-2x-height: 54px;
+$instagram-2x-total-width: 796px;
+$instagram-2x-total-height: 300px;
+$instagram-2x-image: '../../img/sprite@2x.png';
+$instagram-2x: (354px, 174px, -354px, -174px, 54px, 54px, 796px, 300px, '../../img/sprite@2x.png', 'instagram@2x', );
+$instagram-black-2x-name: 'instagramBlack@2x';
+$instagram-black-2x-x: 408px;
+$instagram-black-2x-y: 174px;
+$instagram-black-2x-offset-x: -408px;
+$instagram-black-2x-offset-y: -174px;
+$instagram-black-2x-width: 54px;
+$instagram-black-2x-height: 54px;
+$instagram-black-2x-total-width: 796px;
+$instagram-black-2x-total-height: 300px;
+$instagram-black-2x-image: '../../img/sprite@2x.png';
+$instagram-black-2x: (408px, 174px, -408px, -174px, 54px, 54px, 796px, 300px, '../../img/sprite@2x.png', 'instagramBlack@2x', );
+$logo-2x-name: 'logo@2x';
+$logo-2x-x: 300px;
+$logo-2x-y: 0px;
+$logo-2x-offset-x: -300px;
+$logo-2x-offset-y: 0px;
+$logo-2x-width: 496px;
+$logo-2x-height: 78px;
+$logo-2x-total-width: 796px;
+$logo-2x-total-height: 300px;
+$logo-2x-image: '../../img/sprite@2x.png';
+$logo-2x: (300px, 0px, -300px, 0px, 496px, 78px, 796px, 300px, '../../img/sprite@2x.png', 'logo@2x', );
+$logo-badge-2x-name: 'logoBadge@2x';
+$logo-badge-2x-x: 0px;
+$logo-badge-2x-y: 0px;
+$logo-badge-2x-offset-x: 0px;
+$logo-badge-2x-offset-y: 0px;
+$logo-badge-2x-width: 300px;
+$logo-badge-2x-height: 300px;
+$logo-badge-2x-total-width: 796px;
+$logo-badge-2x-total-height: 300px;
+$logo-badge-2x-image: '../../img/sprite@2x.png';
+$logo-badge-2x: (0px, 0px, 0px, 0px, 300px, 300px, 796px, 300px, '../../img/sprite@2x.png', 'logoBadge@2x', );
+$logo-mobile-2x-name: 'logoMobile@2x';
+$logo-mobile-2x-x: 300px;
+$logo-mobile-2x-y: 78px;
+$logo-mobile-2x-offset-x: -300px;
+$logo-mobile-2x-offset-y: -78px;
+$logo-mobile-2x-width: 300px;
+$logo-mobile-2x-height: 48px;
+$logo-mobile-2x-total-width: 796px;
+$logo-mobile-2x-total-height: 300px;
+$logo-mobile-2x-image: '../../img/sprite@2x.png';
+$logo-mobile-2x: (300px, 78px, -300px, -78px, 300px, 48px, 796px, 300px, '../../img/sprite@2x.png', 'logoMobile@2x', );
+$logofooter-2x-name: 'logofooter@2x';
+$logofooter-2x-x: 300px;
+$logofooter-2x-y: 126px;
+$logofooter-2x-offset-x: -300px;
+$logofooter-2x-offset-y: -126px;
+$logofooter-2x-width: 300px;
+$logofooter-2x-height: 48px;
+$logofooter-2x-total-width: 796px;
+$logofooter-2x-total-height: 300px;
+$logofooter-2x-image: '../../img/sprite@2x.png';
+$logofooter-2x: (300px, 126px, -300px, -126px, 300px, 48px, 796px, 300px, '../../img/sprite@2x.png', 'logofooter@2x', );
+$spritesheet-width: 398px;
+$spritesheet-height: 150px;
+$spritesheet-image: '../../img/sprite.png';
+$spritesheet-sprites: ($facebook, $instagram, $instagram-black, $logo, $logo-badge, $logo-mobile, $logofooter, );
+$spritesheet: (398px, 150px, '../../img/sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 796px;
+$retina-spritesheet-height: 300px;
+$retina-spritesheet-image: '../../img/sprite@2x.png';
+$retina-spritesheet-sprites: ($facebook-2x, $instagram-2x, $instagram-black-2x, $logo-2x, $logo-badge-2x, $logo-mobile-2x, $logofooter-2x, );
+$retina-spritesheet: (796px, 300px, '../../img/sprite@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$facebook-group-name: 'facebook';
+$facebook-group: ('facebook', $facebook, $facebook-2x, );
+$instagram-group-name: 'instagram';
+$instagram-group: ('instagram', $instagram, $instagram-2x, );
+$instagram-black-group-name: 'instagramBlack';
+$instagram-black-group: ('instagramBlack', $instagram-black, $instagram-black-2x, );
+$logo-group-name: 'logo';
+$logo-group: ('logo', $logo, $logo-2x, );
+$logo-badge-group-name: 'logoBadge';
+$logo-badge-group: ('logoBadge', $logo-badge, $logo-badge-2x, );
+$logo-mobile-group-name: 'logoMobile';
+$logo-mobile-group: ('logoMobile', $logo-mobile, $logo-mobile-2x, );
+$logofooter-group-name: 'logofooter';
+$logofooter-group: ('logofooter', $logofooter, $logofooter-2x, );
+$retina-groups: ($facebook-group, $instagram-group, $instagram-black-group, $logo-group, $logo-badge-group, $logo-mobile-group, $logofooter-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
