@@ -18,6 +18,11 @@ function scrollToSection(){
             scrollTop: $('.'+lookingFor).offset().top
         }, 500);
 	});
+	// if($(window).width() < 815){
+	// 	$('.scrollToTrigger').click(function(event){
+	// 		menuToggle();
+	// 	});
+	// };
 };
 
 function wordTicker(){
@@ -38,8 +43,8 @@ function wordTicker(){
 	}, 5000)
 };
 
-function menuToggle(){
-	$('.toggleMenu').click(function(event) {
+function menuToggle(el){
+	$(el).click(function(event) {
 		event.preventDefault();
 		var $nav = $('.primary'),
 			$overlay = $('#toggleOverlay');
@@ -72,5 +77,6 @@ $(document).ready(function(){
 	$('.gallery').attachDragger();
 	scrollToSection();
 	wordTicker();
-	menuToggle();
+	// menuToggle();
+	menuToggle($('.toggleMenu, #toggleOverlay, .scrollToTrigger'));
 });
