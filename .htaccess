@@ -1,0 +1,5 @@
+<ifmodule mod_expires.c>
+<Filesmatch "\.(jpg|jpeg|png|js|css|swf|ico)$">
+    Header set Cache-Control "max-age=2592000, public"
+</Filesmatch>
+</ifmodule>

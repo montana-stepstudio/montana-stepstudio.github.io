@@ -39,15 +39,6 @@
     <link rel="stylesheet" href="dist/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFGhpewnNOCW2Nl3fgt_1ZVsVKX_wB44&callback=initMap"></script>
-
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <!-- <script src="resources/jquery-1.11.1.min.js"></script> -->
-    
-
     <!--[if lt IE 9]>
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
@@ -214,8 +205,22 @@
 		<div id="map" class="half__lrg map">
 			
 		</div>
+	</section>
 
-		<script type="text/javascript">
+	<footer>
+		<div class="container">
+			<div class="inner">
+				<div class="logo left"></div>
+				<div class="right"><a class="instagram" target="_blank" href="https://www.instagram.com/stepthirtyone/"></a></div>
+				<p class="right subText">Copyright (C) 2017. All Rights Reserved. Step Studios</p>
+			</div>
+		</div>
+	</footer>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFGhpewnNOCW2Nl3fgt_1ZVsVKX_wB44&callback=initMap"></script>
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    		<script type="text/javascript">
 
 			var locations = [
 					[	
@@ -245,13 +250,6 @@
 					map: map,
 					icon: 'img/content/pin.png'
 				});
-
-				// google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
-				// 	return function() {
-				// 		infowindow.setContent(locations[i][0]);
-				// 		infowindow.open(map, marker);
-				// 	}
-				// })(marker, i));
 				google.maps.event.addListener(marker, 'mouseout', (function(marker, i) {
 					return function() {
 						infowindow.setContent(locations[i][0]);
@@ -260,20 +258,6 @@
 				})(marker, i));
 			}
 		</script>
-
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="inner">
-				<div class="logo left"></div>
-				<div class="right"><a class="instagram" target="_blank" href="https://www.instagram.com/stepthirtyone/"></a></div>
-				<p class="right subText">Copyright (C) 2017. All Rights Reserved. Step Studios</p>
-			</div>
-		</div>
-	</footer>
-
-    
     <script type="text/javascript" src="dist/js/all.min.js"></script>
 
 </body>
