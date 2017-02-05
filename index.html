@@ -35,9 +35,11 @@
 
     <meta name="msapplication-TileImage" content="img/favicons/favicon-144.png">
     <meta name="theme-color" content="#ee3e41">
-
+    <link rel="stylesheet" href="resources/animate.css" />
     <link rel="stylesheet" href="dist/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <script type="text/javascript" src="resources/jquery-1.11.1.min.js"></script>
 
     <!--[if lt IE 9]>
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -49,7 +51,11 @@
 
 <body>
 
+	<div class="pageLoader"></div>
+
 	<div id="toggleOverlay"></div>
+
+	<div id="scrollTop"></div>
 
 	<div class="banner_bg">
 
@@ -58,8 +64,7 @@
 			<div class="inner">
 				<nav class="right">
 					<ul class="header__nav contacts right">
-						<li><a href="tel:#">+44 (0) 789 898 989</a></li>
-						<li><a href="mailto:#">hello@stepstudio.com</a></li>
+						<li><a href="mailto:#">info@stepthirtyone.com</a></li>
 					</ul>
 				</nav>
 				<div class="header__logo left">
@@ -79,12 +84,12 @@
 
 		</header>
 
-		<section class="banner container">
+		<section class="banner container animate-box" data-animate-effect="fadeInUp">
 			<div class="banner__strapline">
 				<h1>Studios &amp; Creative Workspaces for <br /><span class="wordTicker">artists</span>.</h1>
 				<p>Providing the space you need to create and grow your business while being part of a network of like minded people.</p>
 			</div>
-			<div class="banner__cards">
+			<div class="banner__cards" data-animate-effect="fadeInUp">
 				<div class="banner__cards__item studio">
 					<a href="#">
 						<h3>Studio</h3>
@@ -103,7 +108,7 @@
 		</section>
 	</div>
 
-	<section class="about container">
+	<section class="about container animate-box" data-animate-effect="fadeInUp">
 		<div class="inner">
 
 			<h2 class="left half__lrg">An indepedantly run London based studio built from the ground up with you &amp; the planet in mind.</h2>
@@ -114,74 +119,93 @@
 				<p>
 					We at stepthirtyone believe that sustainability is key, and so during our refurbishments we have recycled in excess of 15 tonnes of waste. Where possible we also up-cycled to make unique features such as our kitchenette shelves made from our previous window ledges. We also donated a large proportion of things from our courtyard such as paving stones and wood to the Forest Gate community garden and some keen allotment owners.
 				</p>
-				<p>
+				<p class="hidden">
 					We want stepthirtyone to be a place for people to come together, work together and create together.</p>
 				</p>
-				<p>
+				<p class="hidden">
 					A bit about where our name came from. The number 31 represents practical yet creative energy, something we hope you will find in our space. It actually takes exactly 31 steps from our gate to our front door (test it if you like). We wanted to echo how many steps it takes for every project and that you can take your creative steps with us.
 				</p>
+				<a class="revealTrigger">Read more...</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="gallery">
-		<ul>
-			<li class="left"><img src="img/content/gallery/gallery01.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery02.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery03.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery04.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery05.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery06.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery07.jpg" draggable="false"></li>
-			<li class="left portrait"><img src="img/content/gallery/gallery08.jpg" draggable="false"></li>
-			<li class="left portrait"><img src="img/content/gallery/gallery09.jpg" draggable="false"></li>
-			<li class="left"><img src="img/content/gallery/gallery10.jpg" draggable="false"></li>
-		</ul>
+	<section class="gallery animate-box" data-animate-effect="fadeInUp">
+		<div class="prev"></div>
+		<div class="next"></div>
+		<div class="galleryInner">
+			<ul>
+				<li class="left"><img src="img/content/gallery/gallery07.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery01.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery02.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery03.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery04.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery05.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery06.jpg" draggable="false"></li>
+				<li class="left portrait"><img src="img/content/gallery/gallery08.jpg" draggable="false"></li>
+				<li class="left portrait"><img src="img/content/gallery/gallery09.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery10.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery11.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery12.jpg" draggable="false"></li>
+				<li class="left portrait"><img src="img/content/gallery/gallery13.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery14.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery15.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery16.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery17.jpg" draggable="false"></li>
+				<li class="left portrait"><img src="img/content/gallery/gallery18.jpg" draggable="false"></li>
+				<li class="left portrait"><img src="img/content/gallery/gallery19.jpg" draggable="false"></li>
+				<li class="left"><img src="img/content/gallery/gallery20.jpg" draggable="false"></li>
+				<li class="left portrait"><img src="img/content/gallery/gallery21.jpg" draggable="false"></li>
+			</ul>
+		</div>
 	</section>
 
-	<section class="spec container">
+	<section class="spec container animate-box" data-animate-effect="fadeInUp">
 		<div class="inner">
 			<div class="spec__item">
 				<img src="./img/content/floorplan_groundfloor.png">
 				<ul>	
 					<li class="specTitle"><h4>Groundfloor</h4></li>
-					<li>Private restroom with shower</li>
-					<li>Dressing area with clothes rail  and basic styling kit of potable steamer and hangers</li>
-					<li>Hair and makeup area with daylight</li>
-					<li>Client area  sofa and coffee table with sockets in the area to aid with production</li>
-					<li>Concrete floor  for a different texture</li>
-					<li>Power Supply</li>
+					<li>Private restroom with shower.</li>
+					<li>Dressing area with clothes rail and basic styling kit of portable steamer and hangers.</li>
+					<li>Hair and makeup area with daylight.</li>
+					<li>Client area, sofa and coffee table.</li>
+					<li>Concrete floor for a different texture.</li>
+					<li>Power Supply 5 double 13amp Plugs.</li>
 				</ul>
 			</div>
 			<div class="spec__item">
 				<img src="./img/content/floorplan_firstfloor.png">
 				<ul>	
 					<li class="specTitle"><h4>1st Floor</h4></li>
-					<li>Dining area  with sockets under the table to aid with production</li>
-					<li>Black out blinds</li>
-					<li>Wireless broadband</li>
-					<li>Re-claimed wooden Floor</li>
-					<li>Restored exposed brick walls</li>
-					<li>Two walls shooting wall</li>
-					<li>Skylights and a full wall of windows</li>
+					<li>Dining area with sockets under the table to aid with production.</li>
+					<li>Kitchenette with Fridge, Kettle, Toaster.</li>
+					<li>Black out blinds on every window.</li>
+					<li>Re-claimed wooden Floor.</li>
+					<li>Restored exposed brick walls.</li>
+					<li>90degree L shape shooting wall.</li>
+					<li>Skylights and a full wall of windows.</li>
+					<li>A range of Colouramas - £10 per meter wastage.</li>
+					<li>Power Supply 7x double 13 amp plugs. More power is able to be arranged with enough notice.</li>
+					<li>Wireless Virgin ultrafast broadband 200mbps download and 15mbps upload fibre-optic.</li>
 				</ul>
 			</div>
 			<button class="ghost__drk">Download Studio Spec</button>
 		</div>
 	</section>
 
-	<section class="cta">
+	<section class="cta animate-box" data-animate-effect="fadeInUp">
 		<button class="ghost__white">Download Production Handbook</button>
 	</section>
 
-	<section class="contact">
+	<section class="contact animate-box" data-animate-effect="fadeInUp">
 		<div class="container">
 			<div class="inner">
 				<div class="left half__sml">
 					<h3>Contact</h3>
 					<h4>Address</h4>
 					<p>
-						149c Neville Rd</br>
+						149 Neville Rd</br>
 						Forest Gate</br>
 						London</br>
 						E7 9QS</br>
@@ -203,7 +227,6 @@
 			</div>
 		</div>
 		<div id="map" class="half__lrg map">
-			
 		</div>
 	</section>
 
@@ -211,16 +234,15 @@
 		<div class="container">
 			<div class="inner">
 				<div class="logo left"></div>
-				<div class="right"><a class="instagram" target="_blank" href="https://www.instagram.com/stepthirtyone/"></a></div>
-				<p class="right subText">Copyright (C) 2017. All Rights Reserved. Step Studios</p>
+				<p class="right subText">Copyright (C) 2017. All Rights Reserved. stepthirtyone</p>
 			</div>
 		</div>
 	</footer>
 
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFGhpewnNOCW2Nl3fgt_1ZVsVKX_wB44&callback=initMap"></script>
-			<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFGhpewnNOCW2Nl3fgt_1ZVsVKX_wB44&callback=initMap"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-    		<script type="text/javascript">
+    	<script type="text/javascript">
 
 			var locations = [
 					[	
@@ -258,6 +280,8 @@
 				})(marker, i));
 			}
 		</script>
+
+	<script type="text/javascript" src="resources/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="dist/js/all.min.js"></script>
 
 </body>

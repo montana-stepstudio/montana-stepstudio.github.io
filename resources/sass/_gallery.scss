@@ -1,6 +1,5 @@
 .gallery{
 	position: relative;
-	overflow-x: scroll;
 	padding: 0px;
 	ul{
 		@extend %clearfix;
@@ -14,12 +13,31 @@
 			}
 			img{
 				max-width: 100%;
-				max-height: 100%;
+				max-height: 267px;
 			}
 		}
 	}
-	&:hover{
-		cursor: move;
+	.prev, .next{
+		position: absolute;
+		top: 0;
+		width: 40px;
+		height: 100%;
+		background-color: rgba(255,255,255, 0.8);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: all .2s;
+		&:hover{
+			cursor: pointer;
+			width: 80px;
+		}
+	}
+	.prev{
+		left: 0px;
+		background-image: url('../../img/sprites/prevArrow.png');
+	}
+	.next{
+		right: 0px;	
+		background-image: url('../../img/sprites/nextArrow.png');
 	}
 	// &:hover{
 	// 	#gallery{
@@ -29,6 +47,9 @@
 	// 		}		
 	// 	}
 	// }
+}
+.galleryInner{
+	overflow-x: scroll;
 }
 // #gallery{
 // 	&_prev,

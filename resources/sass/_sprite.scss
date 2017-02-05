@@ -11,6 +11,17 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+$down-arrow-name: 'downArrow';
+$down-arrow-x: 300px;
+$down-arrow-y: 39px;
+$down-arrow-offset-x: -300px;
+$down-arrow-offset-y: -39px;
+$down-arrow-width: 16px;
+$down-arrow-height: 16px;
+$down-arrow-total-width: 398px;
+$down-arrow-total-height: 150px;
+$down-arrow-image: '../../img/sprite.png';
+$down-arrow: (300px, 39px, -300px, -39px, 16px, 16px, 398px, 150px, '../../img/sprite.png', 'downArrow', );
 $facebook-name: 'facebook';
 $facebook-x: 150px;
 $facebook-y: 87px;
@@ -88,6 +99,39 @@ $logofooter-total-width: 398px;
 $logofooter-total-height: 150px;
 $logofooter-image: '../../img/sprite.png';
 $logofooter: (150px, 63px, -150px, -63px, 150px, 24px, 398px, 150px, '../../img/sprite.png', 'logofooter', );
+$next-arrow-name: 'nextArrow';
+$next-arrow-x: 316px;
+$next-arrow-y: 39px;
+$next-arrow-offset-x: -316px;
+$next-arrow-offset-y: -39px;
+$next-arrow-width: 16px;
+$next-arrow-height: 16px;
+$next-arrow-total-width: 398px;
+$next-arrow-total-height: 150px;
+$next-arrow-image: '../../img/sprite.png';
+$next-arrow: (316px, 39px, -316px, -39px, 16px, 16px, 398px, 150px, '../../img/sprite.png', 'nextArrow', );
+$prev-arrow-name: 'prevArrow';
+$prev-arrow-x: 332px;
+$prev-arrow-y: 39px;
+$prev-arrow-offset-x: -332px;
+$prev-arrow-offset-y: -39px;
+$prev-arrow-width: 16px;
+$prev-arrow-height: 16px;
+$prev-arrow-total-width: 398px;
+$prev-arrow-total-height: 150px;
+$prev-arrow-image: '../../img/sprite.png';
+$prev-arrow: (332px, 39px, -332px, -39px, 16px, 16px, 398px, 150px, '../../img/sprite.png', 'prevArrow', );
+$down-arrow-2x-name: 'downArrow@2x';
+$down-arrow-2x-x: 600px;
+$down-arrow-2x-y: 78px;
+$down-arrow-2x-offset-x: -600px;
+$down-arrow-2x-offset-y: -78px;
+$down-arrow-2x-width: 32px;
+$down-arrow-2x-height: 32px;
+$down-arrow-2x-total-width: 796px;
+$down-arrow-2x-total-height: 300px;
+$down-arrow-2x-image: '../../img/sprite@2x.png';
+$down-arrow-2x: (600px, 78px, -600px, -78px, 32px, 32px, 796px, 300px, '../../img/sprite@2x.png', 'downArrow@2x', );
 $facebook-2x-name: 'facebook@2x';
 $facebook-2x-x: 300px;
 $facebook-2x-y: 174px;
@@ -165,15 +209,37 @@ $logofooter-2x-total-width: 796px;
 $logofooter-2x-total-height: 300px;
 $logofooter-2x-image: '../../img/sprite@2x.png';
 $logofooter-2x: (300px, 126px, -300px, -126px, 300px, 48px, 796px, 300px, '../../img/sprite@2x.png', 'logofooter@2x', );
+$next-arrow-2x-name: 'nextArrow@2x';
+$next-arrow-2x-x: 632px;
+$next-arrow-2x-y: 78px;
+$next-arrow-2x-offset-x: -632px;
+$next-arrow-2x-offset-y: -78px;
+$next-arrow-2x-width: 32px;
+$next-arrow-2x-height: 32px;
+$next-arrow-2x-total-width: 796px;
+$next-arrow-2x-total-height: 300px;
+$next-arrow-2x-image: '../../img/sprite@2x.png';
+$next-arrow-2x: (632px, 78px, -632px, -78px, 32px, 32px, 796px, 300px, '../../img/sprite@2x.png', 'nextArrow@2x', );
+$prev-arrow-2x-name: 'prevArrow@2x';
+$prev-arrow-2x-x: 664px;
+$prev-arrow-2x-y: 78px;
+$prev-arrow-2x-offset-x: -664px;
+$prev-arrow-2x-offset-y: -78px;
+$prev-arrow-2x-width: 32px;
+$prev-arrow-2x-height: 32px;
+$prev-arrow-2x-total-width: 796px;
+$prev-arrow-2x-total-height: 300px;
+$prev-arrow-2x-image: '../../img/sprite@2x.png';
+$prev-arrow-2x: (664px, 78px, -664px, -78px, 32px, 32px, 796px, 300px, '../../img/sprite@2x.png', 'prevArrow@2x', );
 $spritesheet-width: 398px;
 $spritesheet-height: 150px;
 $spritesheet-image: '../../img/sprite.png';
-$spritesheet-sprites: ($facebook, $instagram, $instagram-black, $logo, $logo-badge, $logo-mobile, $logofooter, );
+$spritesheet-sprites: ($down-arrow, $facebook, $instagram, $instagram-black, $logo, $logo-badge, $logo-mobile, $logofooter, $next-arrow, $prev-arrow, );
 $spritesheet: (398px, 150px, '../../img/sprite.png', $spritesheet-sprites, );
 $retina-spritesheet-width: 796px;
 $retina-spritesheet-height: 300px;
 $retina-spritesheet-image: '../../img/sprite@2x.png';
-$retina-spritesheet-sprites: ($facebook-2x, $instagram-2x, $instagram-black-2x, $logo-2x, $logo-badge-2x, $logo-mobile-2x, $logofooter-2x, );
+$retina-spritesheet-sprites: ($down-arrow-2x, $facebook-2x, $instagram-2x, $instagram-black-2x, $logo-2x, $logo-badge-2x, $logo-mobile-2x, $logofooter-2x, $next-arrow-2x, $prev-arrow-2x, );
 $retina-spritesheet: (796px, 300px, '../../img/sprite@2x.png', $retina-spritesheet-sprites, );
 
 /*
@@ -181,6 +247,8 @@ These "retina group" variables are mappings for the naming and pairing of normal
 
 The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
 */
+$down-arrow-group-name: 'downArrow';
+$down-arrow-group: ('downArrow', $down-arrow, $down-arrow-2x, );
 $facebook-group-name: 'facebook';
 $facebook-group: ('facebook', $facebook, $facebook-2x, );
 $instagram-group-name: 'instagram';
@@ -195,7 +263,11 @@ $logo-mobile-group-name: 'logoMobile';
 $logo-mobile-group: ('logoMobile', $logo-mobile, $logo-mobile-2x, );
 $logofooter-group-name: 'logofooter';
 $logofooter-group: ('logofooter', $logofooter, $logofooter-2x, );
-$retina-groups: ($facebook-group, $instagram-group, $instagram-black-group, $logo-group, $logo-badge-group, $logo-mobile-group, $logofooter-group, );
+$next-arrow-group-name: 'nextArrow';
+$next-arrow-group: ('nextArrow', $next-arrow, $next-arrow-2x, );
+$prev-arrow-group-name: 'prevArrow';
+$prev-arrow-group: ('prevArrow', $prev-arrow, $prev-arrow-2x, );
+$retina-groups: ($down-arrow-group, $facebook-group, $instagram-group, $instagram-black-group, $logo-group, $logo-badge-group, $logo-mobile-group, $logofooter-group, $next-arrow-group, $prev-arrow-group, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
