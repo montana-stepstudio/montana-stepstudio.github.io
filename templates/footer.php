@@ -3,7 +3,7 @@
 		<div class="inner">
 			<div class="logo left"></div>
 			<div class="right"><a class="instagram" target="_blank" href="https://www.instagram.com/stepthirtyone/"></a></div>
-			<p class="right subText">Copyright (C) 2017. All Rights Reserved. Step Studios</p>
+			<p class="right subText">Copyright Copyfight (C) 2017. All Rights Reserved. Step Studios</p>
 		</div>
 	</div>
 </footer>

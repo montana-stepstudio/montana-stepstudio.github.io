@@ -25,6 +25,14 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+.hidden {
+    display: none;
+}
+.center{
+	text-align: center;
+}
+
 ul{
 	padding: 0px;
 }
@@ -67,14 +75,14 @@ img{
 	z-index: 9999;
 	background: url(../../img/loader.gif) center no-repeat #fff;
 }
-.animate-box {
-	opacity: 0;
-}
-.animate-box {
-	.js & {
-		opacity: 0;
-	}
-}
+// .animate-box {
+// 	opacity: 0;
+// }
+// .animate-box {
+// 	.js & {
+// 		opacity: 0;
+// 	}
+// }
 .hidden{
 	display:none;
 	opacity: none;

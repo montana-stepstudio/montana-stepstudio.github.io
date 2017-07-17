@@ -1,20 +1,20 @@
-function getGalleryWidth(){
-	var defineWidth = 0;
-	$('.gallery li').each(function(index) {
-		defineWidth += $(this).outerWidth(true);
-	});
-	$('.gallery ul').width(Math.ceil(defineWidth));
-};
+// function getGalleryWidth(){
+// 	var defineWidth = 0;
+// 	$('.gallery li').each(function(index) {
+// 		defineWidth += $(this).outerWidth(true);
+// 	});
+// 	$('.gallery ul').width(Math.ceil(defineWidth));
+// };
 
-function galleryNav(el, distance){
-	var  scrollDistance = $(window).width();
-	$(el).on('click', function(event) {
-		var yScroll = $('.galleryInner').scrollLeft();
-		$('.galleryInner').animate({
-			scrollLeft: yScroll + distance,
-		}, 500);
-	});
-}
+// function galleryNav(el, distance){
+// 	var  scrollDistance = $(window).width();
+// 	$(el).on('click', function(event) {
+// 		var yScroll = $('.galleryInner').scrollLeft();
+// 		$('.galleryInner').animate({
+// 			scrollLeft: yScroll + distance,
+// 		}, 500);
+// 	});
+// }
 
 function scrollToSection(){
 	$('.scrollToTrigger').click(function(event) {
@@ -60,7 +60,7 @@ function revealMore(){
 	$('.intro_p').on('click', '.revealTrigger', function(event) {
 		event.preventDefault();
 		$('.revealTrigger').fadeOut();
-		$('.hidden').each(function(index, el) {
+		$('.hidden').each(function(i, el) {
 			var $item = $(this);
 		    setTimeout(function() { 
 		      $item.show().addClass('fadeInUp animated-fast');
@@ -70,10 +70,16 @@ function revealMore(){
 };
 
 function scrollTop(){
-	$('#scrollTop').on('click', function(event) {
-		event.preventDefault();
+	// $('#scrollTop').on('click', function(event) {
+	// 	event.preventDefault();
+	// 	$('html, body').animate({
+ //            scrollTop: 0
+ //        }, 500);
+	// });
+	$('#scrollTop').click(function(event) {
+		console.log('yeah scroll top');
 		$('html, body').animate({
-            scrollTop: $('body').offset().top
+            scrollTop: 0
         }, 500);
 	});
 };
@@ -82,71 +88,79 @@ var loaderPage = function() {
 	$(".pageLoader").fadeOut("slow");
 };
 
-$.fn.attachDragger = function(){
-    var attachment = false, lastPosition, position, difference;
-    $( $(this).selector ).on("mousedown mouseup mousemove",function(e){
-        if( e.type == "mousedown" ) attachment = true, lastPosition = [e.clientX, e.clientY];
-        if( e.type == "mouseup" ) attachment = false;
-        if( e.type == "mousemove" && attachment == true ){
-            position = [e.clientX, e.clientY];
-            difference = [ (position[0]-lastPosition[0]), (position[1]-lastPosition[1]) ];
-            $(this).scrollLeft( $(this).scrollLeft() - difference[0] );
-            $(this).scrollTop( $(this).scrollTop() - difference[1] );
-            lastPosition = [e.clientX, e.clientY];
-        }
-    });
-    $(window).on("mouseup", function(){
-        attachment = false;
-    });
-}
+// $.fn.attachDragger = function(){
+//     var attachment = false, lastPosition, position, difference;
+//     $( $(this).selector ).on("mousedown mouseup mousemove",function(e){
+//         if( e.type == "mousedown" ) attachment = true, lastPosition = [e.clientX, e.clientY];
+//         if( e.type == "mouseup" ) attachment = false;
+//         if( e.type == "mousemove" && attachment == true ){
+//             position = [e.clientX, e.clientY];
+//             difference = [ (position[0]-lastPosition[0]), (position[1]-lastPosition[1]) ];
+//             $(this).scrollLeft( $(this).scrollLeft() - difference[0] );
+//             $(this).scrollTop( $(this).scrollTop() - difference[1] );
+//             lastPosition = [e.clientX, e.clientY];
+//         }
+//     });
+//     $(window).on("mouseup", function(){
+//         attachment = false;
+//     });
+// }
 
-var contentWayPoint = function() {
-		var i = 0;
+// var contentWayPoint = function() {
+// 		var i = 0;
 
-			$('.animate-box').waypoint( function( direction ) {
+// 			$('.animate-box').waypoint( function( direction ) {
 
-				if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
+// 				if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
 					
-					i++;
+// 					i++;
 
-					$(this.element).addClass('item-animate');
-					setTimeout(function(){
+// 					$(this.element).addClass('item-animate');
+// 					setTimeout(function(){
 
-						$('body .animate-box.item-animate').each(function(k){
-							var el = $(this);
-							setTimeout( function () {
-								var effect = el.data('animate-effect');
-								if ( effect === 'fadeIn') {
-									el.addClass('fadeIn animated-fast');
-								} else if ( effect === 'fadeInLeft') {
-									el.addClass('fadeInLeft animated-fast');
-								} else if ( effect === 'fadeInRight') {
-									el.addClass('fadeInRight animated-fast');
-								} else {
-									el.addClass('fadeInUp animated-fast');
-								}
+// 						$('body .animate-box.item-animate').each(function(k){
+// 							var el = $(this);
+// 							setTimeout( function () {
+// 								var effect = el.data('animate-effect');
+// 								if ( effect === 'fadeIn') {
+// 									el.addClass('fadeIn animated-fast');
+// 								} else if ( effect === 'fadeInLeft') {
+// 									el.addClass('fadeInLeft animated-fast');
+// 								} else if ( effect === 'fadeInRight') {
+// 									el.addClass('fadeInRight animated-fast');
+// 								} else {
+// 									el.addClass('fadeInUp animated-fast');
+// 								}
 
-								el.removeClass('item-animate');
-							},  k * 200, 'easeInOutExpo' );
-						});
+// 								el.removeClass('item-animate');
+// 							},  k * 200, 'easeInOutExpo' );
+// 						});
 						
-					}, 100);
+// 					}, 100);
 					
-				}
+// 				}
 
-			} , { offset: '60%' } );
-	};
+// 			} , { offset: '100%' } );
+// 	};
 
 $(document).ready(function(){
+
+	$('[data-fancybox="images"]').fancybox({
+		  loop : false,
+		  thumbs : {
+		    showOnStart : true
+		  }
+		});
+
 	loaderPage();
-	getGalleryWidth();
-	galleryNav('.next', $(window).width());
-	galleryNav('.prev', -$(window).width());
-	$('.gallery').attachDragger();
-	contentWayPoint();
+	// getGalleryWidth();
+	// galleryNav('.next', $(window).width());
+	// galleryNav('.prev', -$(window).width());
+	// $('.gallery').attachDragger();
+	// contentWayPoint();
 	scrollToSection();
 	wordTicker();
 	menuToggle($('.toggleMenu, #toggleOverlay, .scrollToTrigger'));
 	revealMore();
-	scrollTop()
+	scrollTop();
 });

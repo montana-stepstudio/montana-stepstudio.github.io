@@ -38,14 +38,16 @@
 
     <link rel="stylesheet" href="dist/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/jquery.fancybox.min.css" />
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANFGhpewnNOCW2Nl3fgt_1ZVsVKX_wB44&callback=initMap"></script>
 
     <? //JS ?>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script type="text/javascript" src="/plugins/jQuery/jquery-1.11.1.min.js"><\/script>')</script>
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script>window.jQuery || document.write('<script type="text/javascript" src="/plugins/jQuery/jquery-ui-1.11.2.custom/jquery-ui.min.js"><\/script>')</script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
     <!--[if lt IE 9]>
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>

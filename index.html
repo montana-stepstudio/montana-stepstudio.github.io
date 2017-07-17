@@ -36,6 +36,7 @@
     <meta name="msapplication-TileImage" content="img/favicons/favicon-144.png">
     <meta name="theme-color" content="#ee3e41">
     <link rel="stylesheet" href="resources/animate.css" />
+    <link rel="stylesheet" href="resources/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="dist/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
@@ -130,34 +131,77 @@
 		</div>
 	</section>
 
-	<section class="gallery animate-box" data-animate-effect="fadeInUp">
-		<div class="prev"></div>
-		<div class="next"></div>
-		<div class="galleryInner">
-			<ul>
-				<li class="left"><img src="img/content/gallery/gallery07.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery01.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery02.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery03.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery04.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery05.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery06.jpg" draggable="false"></li>
-				<li class="left portrait"><img src="img/content/gallery/gallery08.jpg" draggable="false"></li>
-				<li class="left portrait"><img src="img/content/gallery/gallery09.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery10.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery11.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery12.jpg" draggable="false"></li>
-				<li class="left portrait"><img src="img/content/gallery/gallery13.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery14.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery15.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery16.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery17.jpg" draggable="false"></li>
-				<li class="left portrait"><img src="img/content/gallery/gallery18.jpg" draggable="false"></li>
-				<li class="left portrait"><img src="img/content/gallery/gallery19.jpg" draggable="false"></li>
-				<li class="left"><img src="img/content/gallery/gallery20.jpg" draggable="false"></li>
-				<li class="left portrait"><img src="img/content/gallery/gallery21.jpg" draggable="false"></li>
-			</ul>
-		</div>
+	<section class="container gallery animate-box" data-animate-effect="fadeInUp">
+
+		<p class="center">
+
+			<a href="./img/content/gallery/groundfloor_001.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_001.jpg" />
+				<button id="galleryCTA" class="solid--white">View Gallery</button>
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_002.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_002.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_003.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_003.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_004.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_004.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_005.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_005.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_006.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_006.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_007.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_007.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_008.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_008.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_009.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_009.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_010.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_010.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/groundfloor_011.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/groundfloor_011.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_001.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_001.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_002.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_002.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_003.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_003.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_004.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_004.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_005.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_005.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_006.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_006.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_007.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_007.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_008.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_008.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_009.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_009.jpg" />
+			</a>
+			<a class="hidden" href="./img/content/gallery/upstairs_010.jpg" data-fancybox="images">
+				<img src="./img/content/gallery/upstairs_010.jpg" />
+			</a>
+
+		</p>
+
 	</section>
 
 	<section class="spec container animate-box" data-animate-effect="fadeInUp">
@@ -280,7 +324,7 @@
 				})(marker, i));
 			}
 		</script>
-
+	<script type="text/javascript" src="resources/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="resources/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="dist/js/all.min.js"></script>
 
